@@ -3,16 +3,23 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B07BB83254C85940081731C /* AddressDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07BB82254C85940081731C /* AddressDB.swift */; };
+		2B07BB88254C85A10081731C /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07BB87254C85A10081731C /* Address.swift */; };
+		2B1C6E922562FC140094171C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1C6E912562FC140094171C /* Constants.swift */; };
 		2B51A1052548BF4E000AF958 /* MovieStarsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51A1042548BF4E000AF958 /* MovieStarsApp.swift */; };
 		2B51A1072548BF4E000AF958 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51A1062548BF4E000AF958 /* ContentView.swift */; };
 		2B51A1092548BF61000AF958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B51A1082548BF61000AF958 /* Assets.xcassets */; };
 		2B51A10C2548BF61000AF958 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B51A10B2548BF61000AF958 /* Preview Assets.xcassets */; };
 		2B51A1172548BF61000AF958 /* MovieStarsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51A1162548BF61000AF958 /* MovieStarsTests.swift */; };
 		2B51A1222548BF61000AF958 /* MovieStarsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51A1212548BF61000AF958 /* MovieStarsUITests.swift */; };
+		2B51A1342548BFFC000AF958 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 2B51A1332548BFFC000AF958 /* Realm */; };
+		2B51A1362548BFFC000AF958 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2B51A1352548BFFC000AF958 /* RealmSwift */; };
+		2B51A13E2548C046000AF958 /* MovieStarsDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51A13D2548C046000AF958 /* MovieStarsDB.swift */; };
+		2B51A1492548C279000AF958 /* MovieStars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51A1482548C279000AF958 /* MovieStars.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B07BB82254C85940081731C /* AddressDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDB.swift; sourceTree = "<group>"; };
+		2B07BB87254C85A10081731C /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		2B1C6E912562FC140094171C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		2B51A1012548BF4E000AF958 /* MovieStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B51A1042548BF4E000AF958 /* MovieStarsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStarsApp.swift; sourceTree = "<group>"; };
 		2B51A1062548BF4E000AF958 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +55,8 @@
 		2B51A11D2548BF61000AF958 /* MovieStarsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieStarsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B51A1212548BF61000AF958 /* MovieStarsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStarsUITests.swift; sourceTree = "<group>"; };
 		2B51A1232548BF61000AF958 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2B51A13D2548C046000AF958 /* MovieStarsDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStarsDB.swift; sourceTree = "<group>"; };
+		2B51A1482548C279000AF958 /* MovieStars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStars.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B51A1362548BFFC000AF958 /* RealmSwift in Frameworks */,
+				2B51A1342548BFFC000AF958 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,11 +109,15 @@
 		2B51A1032548BF4E000AF958 /* MovieStars */ = {
 			isa = PBXGroup;
 			children = (
+				2B51A13C2548C028000AF958 /* ViewModels */,
+				2B51A13B2548C01F000AF958 /* Views */,
+				2B51A13A2548C015000AF958 /* Models */,
 				2B51A1042548BF4E000AF958 /* MovieStarsApp.swift */,
 				2B51A1062548BF4E000AF958 /* ContentView.swift */,
 				2B51A1082548BF61000AF958 /* Assets.xcassets */,
 				2B51A10D2548BF61000AF958 /* Info.plist */,
 				2B51A10A2548BF61000AF958 /* Preview Content */,
+				2B1C6E912562FC140094171C /* Constants.swift */,
 			);
 			path = MovieStars;
 			sourceTree = "<group>";
@@ -130,6 +148,31 @@
 			path = MovieStarsUITests;
 			sourceTree = "<group>";
 		};
+		2B51A13A2548C015000AF958 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B51A13D2548C046000AF958 /* MovieStarsDB.swift */,
+				2B51A1482548C279000AF958 /* MovieStars.swift */,
+				2B07BB82254C85940081731C /* AddressDB.swift */,
+				2B07BB87254C85A10081731C /* Address.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2B51A13B2548C01F000AF958 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2B51A13C2548C028000AF958 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -146,6 +189,10 @@
 			dependencies = (
 			);
 			name = MovieStars;
+			packageProductDependencies = (
+				2B51A1332548BFFC000AF958 /* Realm */,
+				2B51A1352548BFFC000AF958 /* RealmSwift */,
+			);
 			productName = MovieStars;
 			productReference = 2B51A1012548BF4E000AF958 /* MovieStars.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +264,9 @@
 				Base,
 			);
 			mainGroup = 2B51A0F82548BF4E000AF958;
+			packageReferences = (
+				2B51A1322548BFFC000AF958 /* XCRemoteSwiftPackageReference "realm-cocoa" */,
+			);
 			productRefGroup = 2B51A1022548BF4E000AF958 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -259,8 +309,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B07BB88254C85A10081731C /* Address.swift in Sources */,
+				2B51A1492548C279000AF958 /* MovieStars.swift in Sources */,
 				2B51A1072548BF4E000AF958 /* ContentView.swift in Sources */,
 				2B51A1052548BF4E000AF958 /* MovieStarsApp.swift in Sources */,
+				2B1C6E922562FC140094171C /* Constants.swift in Sources */,
+				2B07BB83254C85940081731C /* AddressDB.swift in Sources */,
+				2B51A13E2548C046000AF958 /* MovieStarsDB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -580,6 +635,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2B51A1322548BFFC000AF958 /* XCRemoteSwiftPackageReference "realm-cocoa" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-cocoa.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2B51A1332548BFFC000AF958 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B51A1322548BFFC000AF958 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = Realm;
+		};
+		2B51A1352548BFFC000AF958 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2B51A1322548BFFC000AF958 /* XCRemoteSwiftPackageReference "realm-cocoa" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2B51A0F92548BF4E000AF958 /* Project object */;
 }
