@@ -10,6 +10,7 @@
 		2B07BB83254C85940081731C /* AddressDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07BB82254C85940081731C /* AddressDB.swift */; };
 		2B07BB88254C85A10081731C /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B07BB87254C85A10081731C /* Address.swift */; };
 		2B1C6E922562FC140094171C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1C6E912562FC140094171C /* Constants.swift */; };
+		2B1C6E9B25642D5C0094171C /* MovieStarsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B1C6E9A25642D5C0094171C /* MovieStarsView.swift */; };
 		2B51A1052548BF4E000AF958 /* MovieStarsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51A1042548BF4E000AF958 /* MovieStarsApp.swift */; };
 		2B51A1072548BF4E000AF958 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B51A1062548BF4E000AF958 /* ContentView.swift */; };
 		2B51A1092548BF61000AF958 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B51A1082548BF61000AF958 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		2B07BB82254C85940081731C /* AddressDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressDB.swift; sourceTree = "<group>"; };
 		2B07BB87254C85A10081731C /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		2B1C6E912562FC140094171C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B1C6E9A25642D5C0094171C /* MovieStarsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStarsView.swift; sourceTree = "<group>"; };
 		2B51A1012548BF4E000AF958 /* MovieStars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieStars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B51A1042548BF4E000AF958 /* MovieStarsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStarsApp.swift; sourceTree = "<group>"; };
 		2B51A1062548BF4E000AF958 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		2B51A13B2548C01F000AF958 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2B1C6E9A25642D5C0094171C /* MovieStarsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -316,6 +319,7 @@
 				2B1C6E922562FC140094171C /* Constants.swift in Sources */,
 				2B07BB83254C85940081731C /* AddressDB.swift in Sources */,
 				2B51A13E2548C046000AF958 /* MovieStarsDB.swift in Sources */,
+				2B1C6E9B25642D5C0094171C /* MovieStarsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

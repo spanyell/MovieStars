@@ -17,7 +17,7 @@ struct MovieStars: Identifiable {
     var boobieSize = Constants.EMPTY_STRING
     var moviesAppeared = Constants.EMPTY_STRING
     var movieGenre = Constants.EMPTY_STRING
-    var buttStuff = false
+    var buttStuff = true
 }
 
 extension MovieStars {
